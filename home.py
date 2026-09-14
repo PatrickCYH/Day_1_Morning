@@ -57,3 +57,21 @@ if st.button("Click the button"):
 
 #Exercise 1.6
 st.header("Exercise 1.6")
+
+name = st.text_input("Enter your name")
+age = st.number_input("Enter your age, min_value = 0)
+
+dictionary = {
+    "name":name,
+    "age":age
+}
+
+if st.button("Click the button") and dictionary.get("name") == True and dictionary.get("age") == True:
+    st.write(f"Hello, {dictionary.get("name")}.")
+else:
+    st.write("Fill in the ")
+
+if dictionary.get("age") <= 24:
+    st.write("You were born this millennium")
+else:
+    st.write("You were born last millennium")
